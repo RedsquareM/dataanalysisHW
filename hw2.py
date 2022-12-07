@@ -99,6 +99,7 @@ def collect_data_from_table(teacher):
             if(len(reviews)>0):
                 collect_reviews(row_heading,reviews)
                 break
+            # excel csv file ratings 
             row_h = row_data.find_element_by_tag_name("th").text
             if(row_h in row_heading.keys()):
                 row_d = row_data.find_element_by_tag_name("td")
